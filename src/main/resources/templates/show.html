@@ -23,6 +23,7 @@
             <a href="/">Show All To Do Items</a><br />
             Title :<span th:text="${item.title}" ></span><br />
             Content :<p th:text="${item.content}" ></p>
+            Due Date :<span th:text="${item.duedate}" ></span>
             <a th:href="@{/delete/{id}(id=${item.id})}">Delete this Item</a>
 
             <div th:replace="base :: footer"></div>

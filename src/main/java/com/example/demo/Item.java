@@ -22,6 +22,10 @@ public class Item {
     @Size(max = 150)
     private String content;
 
+    @NotNull
+    @Size(max = 25)
+    private String duedate;
+
     public long getId() {
         return id;
     }
@@ -44,5 +48,13 @@ public class Item {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getDuedate() {
+        return duedate;
+    }
+
+    public void setDuedate(String duedate) {
+        this.duedate = duedate;
     }
 }

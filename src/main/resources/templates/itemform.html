@@ -31,6 +31,9 @@
                 Content : <textarea style="vertical-align: middle;" rows="4" th:field="*{content}" />
                 <span th:if="${#fields.hasErrors('content')}"
                       th:errors="*{content}"></span><br />
+                Due Date : <input type="text" th:field="*{duedate}" />
+                <span th:if="${#fields.hasErrors('duedate')}"
+                      th:errors="*{duedate}"></span><br />
                 <input type="submit" value="Submit" />
             </form>
 

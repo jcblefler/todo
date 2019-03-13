@@ -17,7 +17,9 @@
     <div class="container">
         <div class="jumbotron">
             <div th:replace="base :: header"></div>
-
+            <div th:replace="base :: nav"></div>
+            <br />
+            <br />
             <a href="/">Show All To Do Items</a><br />
             Title :<span th:text="${item.title}" ></span><br />
             Content :<p th:text="${item.content}" ></p>
